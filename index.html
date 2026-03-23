@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>网络安全 · 保护自己，从现在开始</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --danger: #d32f2f;
+      --success: #2e7d32;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+      color: #1a1a1a;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.6rem;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .intro {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: -4rem auto 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      max-width: 900px;
+    }
+    
+    h2 {
+      color: var(--primary);
+      margin: 2.2rem 0 1rem;
+      font-size: 1.8rem;
+      border-left: 5px solid var(--primary);
+      padding-left: 0.9rem;
+    }
+    
+    .threat-grid, .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1.6rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+    }
+    
+    .card h3 {
+      color: var(--danger);
+      margin-bottom: 0.9rem;
+      font-size: 1.35rem;
+    }
+    
+    .tips .card h3 {
+      color: var(--success);
+    }
+    
+    .icon {
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    
+    .final {
+      background: #fff3e0;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin: 3rem 0;
+      border: 3px dashed #f57c00;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #555;
+      font-size: 0.95rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+      .intro { padding: 1.5rem; margin: -3rem auto 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>🛡️ 网络安全 从我做起</h1>
+    <p>你的每一次点击，都可能成为攻击的入口</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    <h2>为什么2025-2026年网络安全更重要？</h2>
+    <p>
+      2025年全球勒索软件损失预计超过<strong>300亿美元</strong><br>
+      平均每39秒就发生一次网络攻击<br>
+      钓鱼邮件仍然是90%+数据泄露的起点<br><br>
+      <strong>网络安全不是IT部门的事，而是每个人的基本素养。</strong>
+    </p>
+  </div>
+
+  <h2>最常见的7大网络威胁（2026年仍然活跃）</h2>
+  <div class="threat-grid">
+    <div class="card">
+      <span class="icon">🎣</span>
+      <h3>钓鱼攻击 Phishing</h3>
+      <p>伪装成银行、快递、领导、微信红包…诱导你点击恶意链接或输入账号密码。最常见的攻击方式。</p>
+    </div>
+    <div class="card">
+      <span class="icon">🔐</span>
+      <h3>弱密码 & 密码复用</h3>
+      <p>123456、password、手机号后6位、同一个密码用几十个网站…一旦泄露全盘皆输。</p>
+    </div>
+    <div class="card">
+      <span class="icon">📱</span>
+      <h3>手机恶意软件 & 钓鱼Wi-Fi</h3>
+      <p>免费Wi-Fi、破解版App、二维码下载、三方应用市场…手机已成为重灾区。</p>
+    </div>
+    <div class="card">
+      <span class="icon">💻</span>
+      <h3>勒索软件 Ransomware</h3>
+      <p>文件加密后索要比特币，个人电脑、企业服务器都可能中招，且恢复成本极高。</p>
+    </div>
+    <div class="card">
+      <span class="icon">🕵️</span>
+      <h3>社交工程 & 冒充诈骗</h3>
+      <p>假客服、假领导、假公安、假投资导师…利用人性弱点直接骗钱。</p>
+    </div>
+    <div class="card">
+      <span class="icon">📧</span>
+      <h3>恶意附件 & Office宏病毒</h3>
+      <p>Word/Excel/PDF附件里藏着木马，打开即中招。</p>
+    </div>
+    <div class="card">
+      <span class="icon">🌐</span>
+      <h3>供应链攻击 & 第三方风险</h3>
+      <p>你信任的软件/插件/云服务被黑，攻击者通过它攻击你（2020-2025年增长最快的攻击类型）。</p>
+    </div>
+  </div>
+
+  <h2>普通人能做到的10条高性价比防护措施</h2>
+  <div class="tips-grid">
+    <div class="card tips">
+      <h3>1. 启用双因素认证（2FA）</h3>
+      <p>邮箱、微信、支付宝、银行、游戏…重要账号必须开</p>
+    </div>
+    <div class="card tips">
+      <h3>2. 使用密码管理器</h3>
+      <p>1Password / Bitwarden / KeePassXC / iCloud钥匙串</p>
+    </div>
+    <div class="card tips">
+      <h3>3. 重要账号用不同密码</h3>
+      <p>至少邮箱、支付、金融类分开</p>
+    </div>
+    <div class="card tips">
+      <h3>4. 不点来路不明的链接和二维码</h3>
+      <p>悬浮球、短信链接、微信小程序…先停一秒想一想</p>
+    </div>
+    <div class="card tips">
+      <h3>5. 手机关闭“允许未知来源”安装</h3>
+      <p>iOS尽量只用App Store</p>
+    </div>
+    <div class="card tips">
+      <h3>6. 公共Wi-Fi尽量使用VPN</h3>
+      <p>或开启手机热点用流量</p>
+    </div>
+    <div class="card tips">
+      <h3>7. 定期更新系统和App</h3>
+      <p>补丁就是最便宜的安全防护</p>
+    </div>
+    <div class="card tips">
+      <h3>8. 重要文件自动备份到云端+硬盘</h3>
+      <p>3-2-1原则：3份拷贝、2种介质、1份异地</p>
+    </div>
+    <div class="card tips">
+      <h3>9. 学会辨别官方短信/电话</h3>
+      <p>不轻信来电显示，不回拨陌生号码</p>
+    </div>
+    <div class="card tips">
+      <h3>10. 培养“多想一秒”的习惯</h3>
+      <p>越着急让你操作的事，越要冷静</p>
+    </div>
+  </div>
+
+  <div class="final">
+    <h2 style="margin-bottom:1rem;color:#e65100;">记住这句话：</h2>
+    <p style="font-size:1.4rem;font-weight:bold;margin:1.2rem 0;">
+      “网络安全最大的漏洞，通常是坐在键盘前的那个人。”
+    </p>
+    <p>从今天开始，做一个更安全的自己。</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>本文档最后更新：2026年　｜　内容仅供普及教育使用</p>
+  <p>保护自己，也是在保护家人和朋友</p>
+</footer>
+
+</body>
+</html>
